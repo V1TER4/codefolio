@@ -41,4 +41,4 @@ npm run dev
 
 O workflow em `.github/workflows/deploy.yml` executa em pushes para `main` ou `master`, instala dependências, gera os projetos, cria o site estático e publica no GitHub Pages. Em Settings → Pages, selecione **GitHub Actions** como source.
 
-O deploy usa Node 20, instala as dependências com `npm install`, executa `npm run build`, envia somente `dist/` como artifact e publica com `actions/deploy-pages`. O `base` do Vite é calculado automaticamente a partir de `GITHUB_REPOSITORY`, funcionando em repositórios de projeto no GitHub Pages.
+O deploy usa Node 24 e actions compatíveis com o runtime Node 24, instala as dependências com `npm install`, executa `npm run build`, envia somente `dist/` como artifact e publica com `actions/deploy-pages`. O `base` do Vite é calculado automaticamente a partir de `GITHUB_REPOSITORY`, funcionando em repositórios de projeto no GitHub Pages.

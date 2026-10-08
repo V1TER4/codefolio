@@ -1,7 +1,10 @@
 import { defineConfig } from 'vite';
 
+const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1];
+const isUserPage = repositoryName?.endsWith('.github.io');
+
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS === 'true' && process.env.GITHUB_REPOSITORY
-    ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
+  base: repositoryName && !isUserPage
+    ? `/${repositoryName}/`
     : '/',
 });
