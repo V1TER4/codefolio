@@ -65,4 +65,3 @@ body { background:radial-gradient(circle at 50% -20%,#10243a 0,#07101b 42%); fon
 .light-theme .timeline { border-color:#9cb9d5; }.light-theme .timeline-dot { box-shadow:0 0 0 4px #f4f7fb; }.light-theme .timeline-item h4 { color:#58708a; }.light-theme .timeline-empty { border-color:#adc3d9; color:#58708a; }
 .light-theme .page-heading { border-color:#d6e0eb; }.light-theme .page-heading p:last-child,.light-theme .project-toolbar { color:#58708a; }
 .light-theme .site-footer .container:after { color:#294865; }
-.contact-section { display:block; }
