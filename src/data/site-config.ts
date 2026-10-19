@@ -8,7 +8,7 @@ export function profileEnv(viteKey: string, nodeKey = viteKey): string {
 
 export const GITHUB_USERNAME = profileEnv('VITE_GITHUB_USERNAME', 'GITHUB_USERNAME') || 'V1TER4';
 const linkedinUrl = profileEnv('VITE_LINKEDIN_URL', 'LINKEDIN_URL') || 'https://www.linkedin.com/in/victor-castilhop/';
-const email = profileEnv('VITE_EMAIL', 'EMAIL') || 'victor.cast.2@gmail.com';
+const email = profileEnv('VITE_EMAIL', 'EMAIL') || 'victor.castilhop@gmail.com';
 
 export const profile = {
   ...profileData,
